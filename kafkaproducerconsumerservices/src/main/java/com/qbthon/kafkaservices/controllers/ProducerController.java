@@ -16,6 +16,7 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.KafkaAdminClient;
 import org.apache.kafka.clients.admin.ListTopicsResult;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -61,6 +62,8 @@ public class ProducerController {
 
 
 	}
+	
+	
 
 	public boolean isKafkaServerRunning() {
 		Properties properties = new Properties();
@@ -133,5 +136,7 @@ public class ProducerController {
 		//step4 produce topic
 
 		//return the response
+		
+		return new ResponseEntity<>("done", HttpStatus.OK);
 	}
 }

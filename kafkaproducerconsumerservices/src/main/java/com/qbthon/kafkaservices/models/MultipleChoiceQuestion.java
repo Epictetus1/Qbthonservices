@@ -17,7 +17,34 @@ public class MultipleChoiceQuestion {
 	  String option3;
 	  String option3correct;
 	  String option4;
-	  String option4correct;
+	  public MultipleChoiceQuestion(String skills, String taxonomy, String difficultylevel, String classification,
+			String multipleanswers, String topic, String questionsource, String questiontext, String option1,
+			String option1correct, String option2, String option2correct, String option3, String option3correct,
+			String option4, String option4correct, String option5, String option5correct, String submitter,
+			String comments) {
+		super();
+		this.skills = skills;
+		this.taxonomy = taxonomy;
+		this.difficultylevel = difficultylevel;
+		this.classification = classification;
+		Multipleanswers = multipleanswers;
+		this.topic = topic;
+		this.questionsource = questionsource;
+		this.questiontext = questiontext;
+		this.option1 = option1;
+		this.option1correct = option1correct;
+		this.option2 = option2;
+		this.option2correct = option2correct;
+		this.option3 = option3;
+		this.option3correct = option3correct;
+		this.option4 = option4;
+		this.option4correct = option4correct;
+		this.option5 = option5;
+		this.option5correct = option5correct;
+		this.submitter = submitter;
+		this.comments = comments;
+	}
+	String option4correct;
 	  String option5;
 	  String option5correct;
 	  String submitter;
