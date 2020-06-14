@@ -2,6 +2,16 @@ package com.qbthon.kafkaservices.models;
 
 public class MultipleChoiceQuestion {
 
+	@Override
+	public String toString() {
+		return "{skills=" + skills + ", taxonomy=" + taxonomy + ", difficultylevel="
+				+ difficultylevel + ", classification=" + classification + ", Multipleanswers=" + Multipleanswers
+				+ ", topic=" + topic + ", questionsource=" + questionsource + ", questiontext=" + questiontext
+				+ ", option1=" + option1 + ", option1correct=" + option1correct + ", option2=" + option2
+				+ ", option2correct=" + option2correct + ", option3=" + option3 + ", option3correct=" + option3correct
+				+ ", option4=" + option4 + ", option4correct=" + option4correct + ", option5=" + option5
+				+ ", option5correct=" + option5correct + ", submitter=" + submitter + ", comments=" + comments + "}";
+	}
 	String skills;
 	 String  taxonomy;
 	  String difficultylevel;

@@ -23,6 +23,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 
 import com.qbthon.kafkaservices.configs.AppConfigs;
+import com.qbthon.kafkaservices.models.JsonSerializer;
 import com.qbthon.kafkaservices.models.McqSerializer;
 import com.qbthon.kafkaservices.models.MultipleChoiceQuestion;
 
@@ -151,9 +152,13 @@ public class TestClass {
 				        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, AppConfigs.bootstrapServers);
 				        properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 				        properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, McqSerializer.class);
-				        MultipleChoiceQuestion mcq = new MultipleChoiceQuestion("java", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, "sukanya", null);
+				        MultipleChoiceQuestion mcq = new MultipleChoiceQuestion("java", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, "AAA", null);
 				        KafkaProducer<String, MultipleChoiceQuestion> kafkaProducer = new KafkaProducer<>(properties);
-				        kafkaProducer.send(new ProducerRecord<>("PractiseMcQ", mcq.getSubmitter(), mcq));
+				        kafkaProducer.send(new ProducerRecord<>("Practise1", mcq.getSubmitter(), mcq));
+				        Thread.currentThread();
+						Thread.sleep(120000);
+						kafkaProducer.close();
+						
 					}
 				}
 			}
