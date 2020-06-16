@@ -1,0 +1,6 @@
+D:\QuestionBuildWorkspace\loginservice\src\main\java\com\loginservice\service\AuthenticationClass.java
+D:\QuestionBuildWorkspace\loginservice\src\main\java\com\loginservice\config\DynamoDBConfig.java
+D:\QuestionBuildWorkspace\loginservice\src\main\java\com\loginservice\LoginServiceApplication.java
+D:\QuestionBuildWorkspace\loginservice\src\main\java\com\loginservice\controllers\LoginController.java
+D:\QuestionBuildWorkspace\loginservice\src\main\java\com\loginservice\repositories\UserInfoRepository.java
+D:\QuestionBuildWorkspace\loginservice\src\main\java\com\loginservice\models\Users.java

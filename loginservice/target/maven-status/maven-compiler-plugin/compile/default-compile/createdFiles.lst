@@ -1,0 +1,6 @@
+com\loginservice\repositories\UserInfoRepository.class
+com\loginservice\controllers\LoginController.class
+com\loginservice\service\AuthenticationClass.class
+com\loginservice\LoginServiceApplication.class
+com\loginservice\models\Users.class
+com\loginservice\config\DynamoDBConfig.class
